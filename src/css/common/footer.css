@@ -1,0 +1,63 @@
+.footer {
+  background-color: #202020;
+}
+
+.footer__container {
+  padding-top: 23px;
+  padding-bottom: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 2px;
+}
+
+.footer__logo img {
+  display: block;
+}
+
+.footer__brand {
+  font-family: 'TTFirsNeue';
+  font-weight: 400;
+  font-size: 14px;
+  color: #E9E9E9;
+}
+
+.footer__quote {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #cacaca;
+  margin-right: 133px;
+}
+
+.footer__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #cacaca;
+  margin-bottom: 8px;
+}
+
+.footer__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=footer.css.map */

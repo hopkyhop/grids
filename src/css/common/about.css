@@ -1,0 +1,63 @@
+.about {
+  background-color: #202020;
+}
+
+.about__container {
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+
+.about__title {
+  margin-bottom: 2px;
+}
+
+.about__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.about__left {
+  padding-top: 3px;
+  grid-column: 6 span;
+  font-weight: 400;
+  font-size: 14.8px;
+  line-height: 28px;
+  color: #cacaca;
+}
+
+.about__right {
+  grid-column: 6 span;
+}
+
+.about__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about__form .form__field {
+  width: 474px;
+}
+
+.about__img {
+  max-height: 100%;
+  margin-bottom: 20px;
+}
+
+.about__text {
+  font-family: 'TTFirsNeue';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 22px;
+  color: #fff;
+  margin-bottom: 16px;
+}
+/*# sourceMappingURL=about.css.map */

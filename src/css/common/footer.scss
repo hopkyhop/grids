@@ -1,0 +1,51 @@
+@import "../untils/variables.scss";
+
+.footer {
+    background-color: $mainColor;
+
+    &__container {
+        padding-top: 23px;
+        padding-bottom: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        display: block;
+        margin-bottom: 2px;
+
+        img {
+            display: block;
+        }
+    }
+
+    &__brand {
+        font-family: 'TTFirsNeue';
+        font-weight: 400;
+        font-size: 14px;
+        color: #E9E9E9;       
+    }
+
+    &__quote {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: $textColor;
+        margin-right: 133px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: $textColor;
+        margin-bottom: 8px;
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

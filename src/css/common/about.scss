@@ -1,0 +1,57 @@
+@import "../untils/variables.scss";
+
+.about {
+    background-color: $mainColor;
+
+    &__container {
+        padding-top: 30px;
+        padding-bottom: 70px;
+    }
+
+    &__title  {
+        margin-bottom: 2px;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 30px;
+    }
+
+    &__left {
+        padding-top: 3px;
+        grid-column: 6 span;
+        font-weight: 400;
+        font-size: 14.8px;
+        line-height: 28px;
+        color: $textColor;
+    }
+
+    &__right {
+        grid-column: 6 span;
+    }
+
+    &__form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .form__field {
+            width: 474px;
+        }
+    }
+
+    &__img {
+        max-height: 100%;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        font-family: 'TTFirsNeue';
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 22px;
+        color: $lightColor;
+        margin-bottom: 16px;
+    }
+}

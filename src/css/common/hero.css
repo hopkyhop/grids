@@ -1,0 +1,93 @@
+.hero__container {
+  padding-top: 41px;
+  padding-bottom: 68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero__title {
+  margin-top: -2px;
+  margin-bottom: 17px;
+}
+
+.hero__article {
+  position: relative;
+  min-height: 630px;
+  width: calc((630/1290)*100%);
+  background-image: url(../images/hero__item--big.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero__article .event {
+  color: #fff;
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+  width: 68%;
+}
+
+.hero__article .event__author {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 3px;
+}
+
+.hero__article .event__title {
+  font-family: 'TTFirsNeue';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 104%;
+  margin-bottom: 19px;
+}
+
+.hero__article .event__btn {
+  display: inline-block;
+}
+
+.hero__article .hero__hashtag {
+  top: 15px;
+  right: 15px;
+}
+
+.hero__right {
+  width: calc((630/1290)*100%);
+}
+
+.hero__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.hero__item {
+  min-height: 257px;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.hero__item--2 {
+  grid-column: 6 span;
+  min-height: 300px;
+  background-image: url(../images/hero__item--2.png);
+}
+
+.hero__item--3 {
+  grid-column: 3 span;
+  background-image: url(../images/hero__item--3.png);
+}
+
+.hero__item--4 {
+  grid-column: 3 span;
+  background-image: url(../images/hero__item--4.png);
+}
+/*# sourceMappingURL=hero.css.map */

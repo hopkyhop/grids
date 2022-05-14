@@ -1,0 +1,204 @@
+.header {
+  background-color: #202020;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 23px;
+  padding-bottom: 22px;
+}
+
+.header .search {
+  display: none;
+}
+
+.header__logo {
+  margin-right: 52px;
+}
+
+.header__menu .menu-open {
+  display: none;
+}
+
+.header__menu .menu-close {
+  display: none;
+}
+
+.header__menu .menu-close svg {
+  width: 18px;
+  height: 18px;
+}
+
+.header__tel {
+  display: none;
+  font-family: 'TTFirsNeue';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ff6e30;
+}
+
+.header__tel svg.header__icon {
+  fill: #ff6e30;
+  width: 20px;
+  height: 20px;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.header__item:not(:last-child) {
+  margin-right: 79px;
+}
+
+.header__link {
+  position: relative;
+  font-family: 'TTFirsNeue';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #fff;
+  -webkit-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+  z-index: 1;
+  outline: none;
+}
+
+.header__link::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: calc(100% + 5px);
+  -webkit-transform: translate(-50%, -50%) scaleX(0);
+          transform: translate(-50%, -50%) scaleX(0);
+  background-color: #bc572b;
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+  z-index: -1;
+}
+
+.header__link:hover {
+  color: #ff6e30;
+}
+
+.header__link:active {
+  color: #ce4307;
+}
+
+.header__link:focus-visible:not(:active)::before {
+  -webkit-transform: translate(-50%, -50%) scaleX(1);
+          transform: translate(-50%, -50%) scaleX(1);
+}
+
+.header__search {
+  position: relative;
+}
+
+.header .form-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  background-color: #202020;
+  padding-top: 5px;
+  padding-bottom: 4px;
+  opacity: 0;
+  -webkit-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+  z-index: 3;
+}
+
+.header .form-search.active {
+  opacity: 1;
+}
+
+.header .form-search input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #E9E9E9;
+  width: 308px;
+  font-family: 'TTFirsNeue';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #E9E9E9;
+  -webkit-transition: border-color .3s ease-in-out;
+  transition: border-color .3s ease-in-out;
+}
+
+.header .form-search input:focus-visible:not(:active) {
+  outline: none;
+  border-color: #ff6e30;
+}
+
+.header .form-search input:focus-visible:hover {
+  border-color: #ff6e30;
+}
+
+.header .form-search input:focus-visible:active {
+  border-color: #ce4307;
+}
+
+.header .form-search input::-webkit-input-placeholder {
+  font-family: 'TTFirsNeue';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #E9E9E9;
+}
+
+.header .form-search input:-ms-input-placeholder {
+  font-family: 'TTFirsNeue';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #E9E9E9;
+}
+
+.header .form-search input::-ms-input-placeholder {
+  font-family: 'TTFirsNeue';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #E9E9E9;
+}
+
+.header .form-search input::placeholder {
+  font-family: 'TTFirsNeue';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #E9E9E9;
+}
+
+.header .form-search .search-close {
+  padding-left: 9px;
+  padding-right: 2px;
+}
+
+.header .form-search .search-close svg {
+  width: 23px;
+  height: 23px;
+}
+/*# sourceMappingURL=header.css.map */

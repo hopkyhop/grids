@@ -1,0 +1,164 @@
+@import "../untils/variables.scss";
+
+.header {
+    background-color: $mainColor;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-top: 23px;
+        padding-bottom: 22px;
+    }
+
+    .search {
+        display: none;
+    }
+
+    &__logo {
+        margin-right: 52px;
+    }
+
+    &__menu {
+        .menu-open {
+            display: none;
+        }
+
+        .menu-close {
+            display: none;
+        }
+
+        .menu-close svg {
+            width: 18px;
+            height: 18px;
+        }
+    }
+    
+    &__tel {
+        display: none;
+        font-family: 'TTFirsNeue';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: $accentColor;
+
+        svg.header__icon {
+            fill: $accentColor;
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 79px;
+    }
+
+    &__link {
+        position: relative;
+        font-family: 'TTFirsNeue';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        color: $lightColor;
+        transition: color .3s ease-in-out;
+        z-index: 1;
+        outline: none;
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 50%;
+            left: 50%;
+            height: 100%;
+            width: calc(100% + 5px);
+            transform: translate(-50%, -50%) scaleX(0);
+            background-color: $tuscanyColor;
+            transition: transform .3s ease-in-out;
+            z-index: -1;
+        } 
+        
+        &:hover {
+            color: $accentColor;
+        }
+    
+        &:active {
+            color: $grenadierColor;
+        }
+
+        &:focus-visible:not(:active)::before {
+        transform: translate(-50%, -50%) scaleX(1);
+        }
+
+    }
+
+    &__search {
+        position: relative;
+    }
+
+    .form-search {
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 30px;
+        background-color: $mainColor;
+        padding-top: 5px;
+        padding-bottom: 4px;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+        z-index: 3;
+
+        &.active {
+            opacity: 1;
+        }
+        
+        input {
+            background: none;
+            border: none;
+            border-bottom: 1px solid #E9E9E9;
+            width: 308px;
+            font-family: 'TTFirsNeue';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            color: #E9E9E9;
+            transition: border-color .3s ease-in-out;
+
+            &:focus-visible:not(:active) {
+                outline: none;
+                border-color: $accentColor;
+            }
+
+            &:focus-visible:hover{
+                border-color: $accentColor;
+            }
+
+            &:focus-visible:active {
+                border-color: $grenadierColor;
+            }
+            
+            &::placeholder {
+                font-family: 'TTFirsNeue';
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 18px;
+                color: #E9E9E9;
+            }
+        }
+
+        .search-close {
+            padding-left: 9px;
+            padding-right: 2px;
+
+            svg {
+                width: 23px;
+                height: 23px;
+            }
+        }
+    }
+}
